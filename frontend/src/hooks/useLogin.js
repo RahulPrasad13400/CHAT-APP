@@ -40,13 +40,5 @@ function handleInputErrors(username, password){
       toast.error("Please fill in all the fields") 
       return false 
     }
-    if(password !== confirmPassword){
-      toast.error("password do not match!")
-      return false
-    }
-    if(password.length < 6) {
-      toast.error("password must be atleast 6 characters!")
-      return false 
-    }
     return true
   }

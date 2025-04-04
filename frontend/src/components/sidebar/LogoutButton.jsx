@@ -4,7 +4,7 @@ import useLogout from "../../hooks/useLogout"
 export default function LogoutButton() {
   const {loading, logout} = useLogout()
   return (
-    <div>
+    <div className="mt-4">
       {  !loading ? (
         <div className="mt-auto">
         <BiLogOut className="w-6 h-6 text-white cursor-pointer" onClick={logout} />  
